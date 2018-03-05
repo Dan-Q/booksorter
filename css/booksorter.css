@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.book {
+  position: relative;
+  width: 25.7vw;
+  height: 30vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.book.plain.black {
+  background-image: url('../img/books/plain/black.svg');
+}
+
+.book.plain.blue {
+  background-image: url('../img/books/plain/blue.svg');
+}
+
+.book.plain.green {
+  background-image: url('../img/books/plain/green.svg');
+}
+
+.book.plain.red {
+  background-image: url('../img/books/plain/red.svg');
+}
+
+.book.plain.yellow {
+  background-image: url('../img/books/plain/yellow.svg');
+}
+
+.book .title {
+  font-size: 1.5vw;
+  position: absolute;
+  text-align: center;
+  width: 15vw;
+  margin: 2.5vw 5vw 0 6vw;
+  transform-origin: 50% 100%;
+  transform: perspective(300px) rotateX(14deg) skewX(2deg););
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 0.5vw;
+}
+
+.book .title small {
+  display: block;
+}
